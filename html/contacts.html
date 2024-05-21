@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offstage Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <h1 class="logo">Offstage</h1>
+        </a>
+        <ul class="nav">
+            <li class="tabs">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="tabs">
+                <a href="staff.html">Staff</a>
+            </li>
+            <li class="tabs">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="tabs">
+                <a href="pricelist.html">Price List</a>
+            </li>
+            <li class="tabs">
+                <a href="contacts.html">Contacts</a>
+            </li>
+        </ul>
+    </header>
+    <div id="container">
+        <form>
+            <label for="name">Name:</label>
+            <div class="rating">
+                <span>Website rating:</span>
+                <label><input type="radio" name="rating" value="1"> 1</label>
+                <label><input type="radio" name="rating" value="2"> 2</label>
+                <label><input type="radio" name="rating" value="3"> 3</label>
+                <label><input type="radio" name="rating" value="4"> 4</label>
+                <label><input type="radio" name="rating" value="5"> 5</label>
+            </div>
+            <label for="email">Email:</label>
+            <input type="text" id="name" name="name">
+            <label for="message">Message:</label>
+            <input type="email" id="email" name="email">
+            <textarea id="message" name="message"></textarea>
+            <div class="buttons">
+                <div>
+                    <label><input type="radio" name="type" value="help"> Request for help</label>
+                    <label><input type="radio" name="type" value="feedback"> Feedback</label>
+                    <label><input type="checkbox" name="subscribe"> Subscribe for the newsletters</label>
+                </div>
+                <div class="ressub">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
