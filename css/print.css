@@ -1,0 +1,62 @@
+
+body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 100%;
+    font-family: Arial, sans-serif; 
+}
+
+body::before,
+body::after {
+    content: none !important;
+}
+
+header, footer, .navbar, .footer {
+    display: none !important;
+}
+
+main, .content, .forms, .gallery-container, .staff {
+    background: #fff !important;
+    color: #000 !important;
+    padding: 1em;
+}
+
+.carousel, .video-container, .video-responsive {
+    display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+    page-break-after: avoid;
+    margin: 0.5em 0;
+}
+
+a:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #000;
+}
+
+.pricelist, .staffinfo, .image-container, .gallery-content {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+    color: #000 !important;
+}
+
+.gallery-content {
+    flex-direction: column !important;
+    gap: 0 !important;
+}
+
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+@page {
+    margin: 1in;
+}

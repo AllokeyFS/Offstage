@@ -1,88 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <title>Offstage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Offstage - Contact</title>
 </head>
-
 <body>
-  <header class="header">
-    <a href="index.html">
-      <h1 class="logo">Offstage</h1>
-    </a>
-    <ul class="nav">
-      <li class="tabs">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="tabs">
-        <a href="staff.html">Staff</a>
-      </li>
-      <li class="tabs">
-        <a href="gallery.html">Gallery</a>
-      </li>
-      <li class="tabs">
-        <a href="pricelist.html">Price List</a>
-      </li>
-      <li class="tabs">
-        <a href="contact.html">Contacts</a>
-      </li>
-    </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html">Offstage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricelist.html">Price List</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <div class="forms">
-    <h1 class="heading">Contacts</h1>
-    <div class="inputforms">
-      <form action="mailto:Atosh.rami@gmail.com" method="post" enctype="text/plain">
-        <fieldset>
-          <label for="pname"><strong>Name</strong></label><br>
-          <input type="text" name="pname" id="pname" size="60"><br><br>
-          <label for="email"><strong>E-mail address</strong></label><br>
-          <input type="email" name="email" id="email" size="60"><br><br>
-          <label for="story"><strong>Message</strong></label><br>
-          <textarea name="story" id="story" cols="60" rows="10" placeholder=""></textarea><br><br>
-          <input type="radio" name="help" id="request" checked>
-          <label for="request">Request for help</label>
-          <input type="radio" name="help" id="feedback">
-          <label for="feedback">Feedback</label><br><br>
-          <input type="checkbox" name="newsletter" id="newsletter" checked>
-          <label for="newsletter">Subscribe for the newsletter</label>
-        </fieldset>
-    </div>
-    <div class="ratingscale">
-      <fieldset>
-        <p>Website rating:</p>
-        <input type="radio" name="rating" id="v1" value="1">
-        <label for="v1">1</label><br>
-        <input type="radio" name="rating" id="v2" value="2">
-        <label for="v2">2</label><br>
-        <input type="radio" name="rating" id="v3" value="3">
-        <label for="v3">3</label><br>
-        <input type="radio" name="rating" id="v4" value="4">
-        <label for="v4">4</label><br>
-        <input type="radio" name="rating" id="v5" value="5">
-        <label for="v5">5</label><br>
-      </fieldset>
-    </div>
-    <div class="subres">
-      <fieldset>
-        <p><b>Send</b></p>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-      </fieldset>
-    </div>
-    </form>
-  </div>
-  <footer class="footer" id="contacts">
-    <p id="logo">Offstage</p>
-    <p id="author"> Author: Abu Snaineh Ata Atosh</p>
-    <ul>
-			<a href="http:\\www.facebook.com" class="sociallinks"><img src="../media/icons/facebook.png"></a>
-			<a href="http:\\www.whatsapp.com" class="sociallinks"><img src="../media/icons/whatsapp.png"></a>
-			<a href="http:\\www.instagram.com" class="sociallinks"><img src="../media/icons/instagram.png"></a>
-		</ul>
-  </footer>
-</body>
 
+  <main class="forms">
+    <h1 class="heading text-center">Contact</h1>
+    <div class="container mt-4">
+      <form action="mailto:Atosh.rami@gmail.com" method="post" enctype="text/plain">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="mb-3">
+              <label for="pname" class="form-label"><strong>Name:</strong></label>
+              <input type="text" name="pname" id="pname" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"><strong>Email:</strong></label>
+              <input type="email" name="email" id="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="story" class="form-label"><strong>Message:</strong></label>
+              <textarea name="story" id="story" cols="60" rows="5" class="form-control"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <div class="form-check form-check-inline">
+                <input type="radio" name="help" id="request" value="Request for help" class="form-check-input" checked>
+                <label for="request" class="form-check-label">Request for help</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" name="help" id="feedback" value="Feedback" class="form-check-input">
+                <label for="feedback" class="form-check-label">Feedback</label>
+              </div>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" name="newsletter" id="newsletter" class="form-check-input" checked>
+              <label for="newsletter" class="form-check-label">Subscribe for the newsletters</label>
+            </div>
+
+            <div class="d-flex gap-2">
+              <input type="reset" value="Reset" class="btn btn-outline-secondary">
+              <input type="submit" value="Submit" class="btn btn-primary">
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="mb-3">
+              <p><strong>Website rating:</strong></p>
+              <div class="form-check">
+                <input type="radio" name="rating" id="v1" value="1" class="form-check-input">
+                <label for="v1" class="form-check-label">1</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating" id="v2" value="2" class="form-check-input">
+                <label for="v2" class="form-check-label">2</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating" id="v3" value="3" class="form-check-input">
+                <label for="v3" class="form-check-label">3</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating" id="v4" value="4" class="form-check-input">
+                <label for="v4" class="form-check-label">4</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating" id="v5" value="5" class="form-check-input">
+                <label for="v5" class="form-check-label">5</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="logo">Offstage</p>
+    <p class="author">Author: Abu Snaineh Ata Atosh</p>
+    <ul>
+      <li><a href="http://www.facebook.com" class="sociallinks"><img src="../media/icons/facebook.png" alt="Facebook"></a></li>
+      <li><a href="http://www.whatsapp.com" class="sociallinks"><img src="../media/icons/whatsapp.png" alt="WhatsApp"></a></li>
+      <li><a href="http://www.instagram.com" class="sociallinks"><img src="../media/icons/instagram.png" alt="Instagram"></a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  
+</body>
 </html>
